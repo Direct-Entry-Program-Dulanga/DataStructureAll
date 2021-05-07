@@ -17,20 +17,39 @@ public class Dequeue {
     }
 
     public void dequeue(){
-
+        if (empty()){
+            System.err.println("Can't dequeue from empty queue");
+            return;
+        }else if (QArray.length == 1){
+            QArray = null;
+            return;
+        }
+        int[] temp = new int[QArray.length - 1];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = QArray[i+1];
+        }
+        QArray = temp;
     }
 
     public boolean empty(){
-        return true;
+        return this.QArray == null;
     }
 
 
     public void clear(){
-
+        QArray = null;
     }
 
     public void print(){
-
+        if (empty()){
+            System.out.println("[]");
+            return;
+        }
+        System.out.print("[");
+        for (int i = QArray.length - 1; i >=0 ; i--) {
+            System.out.print(QArray[i] + " ");
+        }
+        System.out.println(" ]");
     }
 
     public boolean contains(){
