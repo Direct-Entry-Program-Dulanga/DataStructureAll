@@ -25,10 +25,12 @@ public class Dyanmic {
 
 
             }
-            temp[i+1] = number;
+            temp[i] = number;
+            System.out.println(arrayDyanmic[i]);
         }
         temp[0] = number;
         arrayDyanmic = temp;
+
     }
 
 
