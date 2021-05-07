@@ -25,7 +25,6 @@ public class Queue {
             int[] temp = new int[ArrayQ.length];
             for (int i = temp.length-1; i > 0; i--) {
 
-//                    temp[i] = temp[i+1];
                 temp[i] = ArrayQ[i+1];
             }
             ArrayQ = temp;
@@ -56,7 +55,7 @@ public class Queue {
         for (int i = 0; i < ArrayQ.length ; i++) {
             System.out.print(ArrayQ[i]+" ");
         }
-        System.out.print(" \b]");
+        System.out.print("\b]");
         System.out.println("");
     }
 
