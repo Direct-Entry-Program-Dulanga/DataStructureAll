@@ -43,10 +43,6 @@ public class Dyanmic {
     }
 
     public void print(){
-        if(empty()){
-            System.out.println("[]");
-            return;
-        }
         System.out.print("[ ");
         for (int i = 0; i < arrayDyanmic.length ; i++) {
             System.out.print(arrayDyanmic[i]+" ");
