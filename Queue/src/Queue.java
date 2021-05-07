@@ -19,10 +19,14 @@ public class Queue {
     public void dequeue(){
         if (ArrayQ == null) {
             System.out.println("Can't Dequeue");
+        }else if(ArrayQ.length == 1){
+
         } else {
             int[] temp = new int[ArrayQ.length];
             for (int i = temp.length-1; i > 0; i--) {
-                temp[i] = ArrayQ[i];
+
+//                    temp[i] = temp[i+1];
+                temp[i] = ArrayQ[i+1];
             }
             ArrayQ = temp;
         }
