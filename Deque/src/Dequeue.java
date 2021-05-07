@@ -63,21 +63,5 @@ public class Dequeue {
     }
 
 
-    public void enqueueRear(int number) {
-        if (this.empty()) {
-            this.QArray = new int[1];
-            this.QArray[0] = number;
-        } else {
-            int[] temp = new int[QArray.length + 1];
-            for (int i = QArray.length; i < QArray.length + 1; i++) {
-                temp[i] = QArray[i];
-            }
-            temp[temp.length - 1] = number;
-            QArray = temp;
-        }
-    }
 
-    public void dequeueFront() {
-
-    }
 }

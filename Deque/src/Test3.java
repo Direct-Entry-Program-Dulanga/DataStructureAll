@@ -6,12 +6,10 @@ public class Test3 {
         System.out.println(dequeue.empty());      // false
         dequeue.enqueue(20);
         dequeue.enqueue(30);
-        dequeue.print();
-        dequeue.dequeue();
-        dequeue.dequeue();
-        dequeue.dequeue();
-        dequeue.print();
-
         dequeue.enqueueRear(40);
+        dequeue.print();
+        dequeue.dequeue();
+
+
     }
 }
