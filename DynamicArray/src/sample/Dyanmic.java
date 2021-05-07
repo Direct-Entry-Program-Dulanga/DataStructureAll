@@ -23,9 +23,11 @@ public class Dyanmic {
             if(i == index){
                 temp[i] = arrayDyanmic[i];
 
+
             }
+            temp[i+1] = number;
         }
-        temp[temp.length-1] = number;
+        temp[0] = number;
         arrayDyanmic = temp;
     }
 
