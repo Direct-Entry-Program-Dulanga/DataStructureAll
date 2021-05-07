@@ -1,3 +1,5 @@
+import java.util.Queue;
+
 public class Dequeue {
 
     private int[] QArray;
@@ -62,4 +64,14 @@ public class Dequeue {
 
 
 
+}
+
+class Deq extends Dequeue{
+    public void enqueueRear(int number){
+
+    }
+
+    public void dequeueFront(){
+
+    }
 }
