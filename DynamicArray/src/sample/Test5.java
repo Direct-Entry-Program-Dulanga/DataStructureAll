@@ -5,6 +5,7 @@ public class Test5 {
         Dyanmic dyanmic = new Dyanmic();
         dyanmic.add1(10);
         dyanmic.add1(12);
-        dyanmic.add(2,34);
+        dyanmic.add(4,34);
+        dyanmic.print();
     }
 }

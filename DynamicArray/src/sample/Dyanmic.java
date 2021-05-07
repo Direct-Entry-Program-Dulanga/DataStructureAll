@@ -22,6 +22,7 @@ public class Dyanmic {
         for (int i = 0; i < arrayDyanmic.length; i++) {
             if(i == index){
                 temp[i] = arrayDyanmic[i];
+
             }
         }
         temp[temp.length-1] = number;
@@ -38,7 +39,16 @@ public class Dyanmic {
     }
 
     public void print(){
-
+        if(empty()){
+            System.out.println("[]");
+            return;
+        }
+        System.out.print("[ ");
+        for (int i = 0; i < arrayDyanmic.length ; i++) {
+            System.out.print(arrayDyanmic[i]+" ");
+        }
+        System.out.print("\b]");
+        System.out.println("");
     }
 
     public void clear(){
