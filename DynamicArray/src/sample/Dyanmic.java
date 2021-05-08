@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Arrays;
+
 public class Dyanmic {
 
     private int[] arrayDyanmic;
@@ -9,7 +11,7 @@ public class Dyanmic {
     }
 
     public void add(int index, int number){
-        int[] temp = new int[arrayDyanmic.length+1];
+        int[] temp = new int[size()+1];
         for (int i = 0; i < temp.length; i++) {
             if(i < index){
                 temp[i] = arrayDyanmic[i];
@@ -51,12 +53,7 @@ public class Dyanmic {
     }
 
     public void print(){
-        System.out.print("[ ");
-        for (int i = 0; i < arrayDyanmic.length ; i++) {
-            System.out.print(arrayDyanmic[i]+" ");
-        }
-        System.out.print("\b]");
-        System.out.println("");
+        System.out.println(empty() ? "[]" : Arrays.toString(arrayDyanmic));
     }
 
     public void clear() {
@@ -72,8 +69,17 @@ public class Dyanmic {
         return (arrayDyanmic == null) ? 0 : arrayDyanmic.length;
     }
 
-    public boolean contains(int number){
-        return true;
+    public boolean contains(int number) {
+        if (empty()){
+            return false;
+        }
+        for (int i = 0; i < arrayDyanmic.length; i++) {
+            if (arrayDyanmic[i] == number){
+                return true;
+            }
+        }
+        return false;
     }
+
 
 }

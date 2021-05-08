@@ -20,6 +20,11 @@ public class Test5 {
         dyanmic.print();
         System.out.println("");
         System.out.println(dyanmic.empty());
+        System.out.println("");
+
+        dyanmic.clear();
+        System.out.println("Clear: ");
+        dyanmic.print();
 
     }
 }
