@@ -4,18 +4,8 @@ public class Dyanmic {
 
     private int[] arrayDyanmic;
 
-    public void add(int number){
-        if(arrayDyanmic == null){
-            arrayDyanmic = new int[1];
-            arrayDyanmic[0] = number;
-        }else{
-            int[] temp = new int[arrayDyanmic.length+1];
-            for (int i = 0; i < arrayDyanmic.length; i++) {
-                temp[i] = arrayDyanmic[i];
-            }
-            temp[temp.length-1] = number;
-            arrayDyanmic = temp;
-        }
+    public void add(int number) {
+        add(size(), number);
     }
 
     public void add(int index, int number){
@@ -53,8 +43,11 @@ public class Dyanmic {
 
     }
 
-    public void get(int index){
-
+    public int get(int index){
+        if (index >= size() || index < 0){
+            throw new RuntimeException("Invalid array index");
+        }
+        return arrayDyanmic[index];
     }
 
     public void print(){
