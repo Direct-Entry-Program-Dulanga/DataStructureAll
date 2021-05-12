@@ -16,7 +16,7 @@ public class SinglyLinked {
     }
 
     public void add(int index, int number){
-
+        
     }
 
     public void remove(int index){
