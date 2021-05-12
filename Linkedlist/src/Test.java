@@ -6,5 +6,7 @@ public class Test {
         list.add(20);
         list.add(30);
         list.print();
+        System.out.println("");
+        System.out.println("Size of list: "+list.size());
     }
 }
